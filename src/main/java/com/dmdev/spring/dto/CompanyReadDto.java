@@ -1,4 +1,14 @@
 package com.dmdev.spring.dto;
 
-public record CompanyReadDto(Integer id) {
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+public class CompanyReadDto {
+    private final Integer id;
+
+    public CompanyReadDto(Integer id) {
+        this.id = id;
+    }
+
 }
